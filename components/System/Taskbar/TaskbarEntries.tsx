@@ -1,9 +1,9 @@
-import styles from '@/styles/System/Taskbar/TaskbarEntries.module.scss';
 
 import dynamic from 'next/dynamic';
 import { AnimatePresence } from 'framer-motion';
-import { ProcessContext } from '@/contexts/ProcessManager';
 import { useContext } from 'react';
+import { ProcessContext } from '@/contexts/ProcessManager';
+import styles from '@/styles/System/Taskbar/TaskbarEntries.module.scss';
 
 const TaskbarEntry = dynamic(
   import('@/components/System/Taskbar/TaskbarEntry')

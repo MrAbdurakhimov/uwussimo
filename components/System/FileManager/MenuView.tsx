@@ -10,9 +10,9 @@ const DirectoryMenu: React.FC<DirectoryView> = ({ entries, onDoubleClick }) => {
       {entries.map(({ icon, name, path, url }) => (
         <li key={path} onClick={onDoubleClick({ path, url, icon, name })}>
           <figure>
-            <div className={styles.menuIcon}>
-              <Icon src={icon} height={32} width={32} />
-            </div>
+            {/*<div className={styles.menuIcon}>*/}
+            {/*  <Icon src={icon} height={32} width={32} />*/}
+            {/*</div>*/}
             <figcaption>{name}</figcaption>
           </figure>
         </li>

@@ -25,11 +25,6 @@ const StartMenu: React.FC<{
         <>
           {showMenu && (
             <nav className={styles.menu} ref={menuRef} tabIndex={-1}>
-              <ButtonBar
-                startButtonRef={startButtonRef}
-                buttonsRef={buttonsRef}
-                setShowMenu={setShowMenu}
-              />
               <FileManager
                 path="/start"
                 render={MenuView}
