@@ -1,8 +1,8 @@
   {
-  "name": "genos",
+  "name": "uwussimo",
   "description": "Desktop environment in the browser.",
   "version": "1.0.0",
-  "author": "Genemator Sakhib",
+  "author": "UwUssimo Robinson",
   "license": "MIT",
   "scripts": {
     "build": "next build",
