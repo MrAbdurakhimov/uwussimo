@@ -2,36 +2,10 @@
   "desktop": {
     "Code.url": null,
     "Explorer.url": null,
-    "Genemator.url": null,
     "Telegram.url": null,
     "Winamp.url": null
   },
   "docs": { "welcome.odt": null },
-  "favicon.ico": null,
-  "fonts": {
-    "SF-Regular.woff2": null,
-    "segmdl2.woff2": null,
-    "segoeui.woff2": null
-  },
-  "icons": {
-    "files": { "js.svg": null, "unknown.svg": null },
-    "games": { "doom.png": null, "jazz.png": null, "keen.png": null },
-    "programs": {
-      "explorer.png": null,
-      "genemator.png": null,
-      "save.png": null,
-      "telegram.png": null,
-      "vscode.png": null,
-      "webodf.png": null,
-      "winamp.png": null
-    }
-  },
-  "libs": {
-    "vanta.dots.min.js": null,
-    "vanta.globe.min.js": null,
-    "vanta.waves.min.js": null,
-    "webodf.js": null
-  },
   "musics": {
     "comforting.mp3": null,
     "dancing with a stranger.mp3": null,
@@ -40,6 +14,5 @@
     "slow dance in the dark.mp3": null,
     "yeah right.mp3": null
   },
-  "skins": { "Adidas.wsz": null },
   "start": { "WebODF.url": null }
 }

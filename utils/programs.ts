@@ -2,7 +2,6 @@ import dynamic from 'next/dynamic';
 import { extname } from 'path';
 import type { AppFile, AppLoader, AppLoaders } from '@/types/utils/programs';
 import { isValidUrl } from '@/utils/url';
-import { loaderOptions as genematorLoaderOptions } from '@/components/Programs/Genemator';
 import { loaderOptions as codeLoaderOptions } from '@/components/Programs/Code';
 import { loaderOptions as telegramLoaderOptions } from '@/components/Programs/Telegram';
 import { loaderOptions as explorerLoaderOptions } from '@/components/Programs/Explorer';
@@ -10,7 +9,6 @@ import { loaderOptions as webampLoaderOptions } from '@/components/Programs/WebO
 import { loaderOptions as winampLoaderOptions } from '@/components/Programs/Winamp';
 import { ROOT_DIRECTORY } from '@/utils/constants';
 
-const Genemator = dynamic(import('@/components/Programs/Genemator'));
 const Code = dynamic(import('@/components/Programs/Code'));
 const Telegram = dynamic(import('@/components/Programs/Telegram'));
 const Explorer = dynamic(import('@/components/Programs/Explorer'));
@@ -18,10 +16,6 @@ const WebODF = dynamic(import('@/components/Programs/WebODF'));
 const Winamp = dynamic(import('@/components/Programs/Winamp'));
 
 const appLoaders: AppLoaders = {
-  genemator: {
-    loader: Genemator,
-    loaderOptions: genematorLoaderOptions
-  },
   code: {
     loader: Code,
     loaderOptions: codeLoaderOptions
@@ -46,7 +40,6 @@ const appLoaders: AppLoaders = {
 
 export const getAppNameByExtension = (ext: string): string => {
   switch (ext) {
-    case '.jsdos':
     case '.zip':
       return 'DOS';
     case '.odt':

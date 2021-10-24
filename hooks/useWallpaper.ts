@@ -1,13 +1,11 @@
-import WAVES from '@/public/libs/vanta.waves.min';
-import GLOBE from '@/public/libs/vanta.globe.min';
-import DOTS from '@/public/libs/vanta.dots.min';
+import * as THREE from 'three';
+import Color from 'color';
+import { useEffect } from 'react';
+import FOG from '@/public/libs/vanta.fog.min';
 
 import type { WallpaperEffect } from '@/types/components/System/Desktop/Wallpaper';
 
-import * as THREE from 'three';
-import Color from 'color';
 import { MILLISECONDS_IN_SECOND } from '@/utils/constants';
-import { useEffect } from 'react';
 
 const wallpaperColor = (h: number): number =>
   Color(`hsl(${h}, 0%, 0%)`).rgbNumber();
@@ -19,13 +17,9 @@ const vantaJsSettings = {
   gyroControls: false,
   mouseControls: true,
   touchControls: true,
-  color: 0xffffff, // wallpaperColor(initialColor),
-  // shininess: 35,
-  size: 0.6,
-  // waveHeight: 15,
-  // waveSpeed: 0.25,
-  backgroundColor: 0x0
-  // zoom: 0.95
+  highlightColor: 0xffffff,
+  midtoneColor: 0xffffff,
+  lowlightColor: 0x4e2ceb
 };
 
 const initRainbowEffect = (wallpaperEffect: WallpaperEffect): (() => void) => {
@@ -44,6 +38,7 @@ const initRainbowEffect = (wallpaperEffect: WallpaperEffect): (() => void) => {
       wallpaperEffect.options.color = wallpaperColor(base);
     }
 
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     colorUpdateAnimationId = requestAnimationFrame(updateColor);
   };
 
@@ -57,14 +52,12 @@ const initRainbowEffect = (wallpaperEffect: WallpaperEffect): (() => void) => {
 const renderWallpaperEffect = ({
   current: renderElement
 }: React.RefObject<HTMLElement>): WallpaperEffect => {
-  const wallpaperEffect = GLOBE({
+  const wallpaperEffect = FOG({
     el: renderElement,
     THREE,
     ...vantaJsSettings
   });
-  const cancelRainbowEffect = initRainbowEffect(wallpaperEffect);
-
-  wallpaperEffect.onDestroy = cancelRainbowEffect;
+  wallpaperEffect.onDestroy = initRainbowEffect(wallpaperEffect);
 
   return wallpaperEffect;
 };

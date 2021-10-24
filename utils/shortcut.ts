@@ -1,7 +1,7 @@
 import type { FSModule } from 'browserfs/dist/node/core/FS';
+import * as ini from 'ini';
 import type { Shortcut } from '@/types/utils/shortcut';
 
-import * as ini from 'ini';
 import { isValidUrl } from '@/utils/url';
 
 const shortcutCache: {
