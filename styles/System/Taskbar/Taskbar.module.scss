@@ -1,0 +1,23 @@
+@import '@/styles/maps';
+
+.footer {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.taskbar {
+  position: fixed;
+  z-index: map-get($zIndex, taskbar);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: map-get($taskbar, height);
+  background-color: hsla(
+    0,
+    0%,
+    map-get($taskbar, base-lightness),
+    map-get($taskbar, opacity)
+  );
+  backdrop-filter: blur(map-get($taskbar, blur));
+}
