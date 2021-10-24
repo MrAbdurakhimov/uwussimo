@@ -1,9 +1,7 @@
-import type { AppFile, AppLoader, AppLoaders } from '@/types/utils/programs';
-
 import dynamic from 'next/dynamic';
 import { extname } from 'path';
+import type { AppFile, AppLoader, AppLoaders } from '@/types/utils/programs';
 import { isValidUrl } from '@/utils/url';
-import { loaderOptions as oldLoaderOptions } from '@/components/Programs/Old';
 import { loaderOptions as genematorLoaderOptions } from '@/components/Programs/Genemator';
 import { loaderOptions as codeLoaderOptions } from '@/components/Programs/Code';
 import { loaderOptions as telegramLoaderOptions } from '@/components/Programs/Telegram';
