@@ -37,32 +37,31 @@ const FileManager: React.FC<DirectoryType> = ({
       await getDirectoryEntry(fs, cwd, file.name, details)
     ]);
   });
-  const onDoubleClick = ({
-    path,
-    url,
-    icon = '',
-    name = ''
-  }: DirectoryEntryDoubleClick) => (event: React.MouseEvent<Element>) => {
-    if (path && !path.includes('.url') && (path === '..' || !extname(path))) {
-      cd(path === '..' ? resolve(cwd, '..') : path);
-    } else {
-      const appUrl = url || path || '';
-      const processsId = open(
-        {
-          url: appUrl,
-          icon,
-          name,
-          ...(appUrl ? { appName: getAppNameByExtension(extname(appUrl)) } : {})
-        },
-        getState({ name }),
-        event.currentTarget
-      );
-      if (processsId) {
-        foreground(processsId);
-        onChange?.();
+  const onDoubleClick =
+    ({ path, url, icon = '', name = '' }: DirectoryEntryDoubleClick) =>
+    (event: React.MouseEvent<Element>) => {
+      if (path && !path.includes('.url') && (path === '..' || !extname(path))) {
+        cd(path === '..' ? resolve(cwd, '..') : path);
+      } else {
+        const appUrl = url || path || '';
+        const processsId = open(
+          {
+            url: appUrl,
+            icon,
+            name,
+            ...(appUrl
+              ? { appName: getAppNameByExtension(extname(appUrl)) }
+              : {})
+          },
+          getState({ name }),
+          event.currentTarget
+        );
+        if (processsId) {
+          foreground(processsId);
+          onChange?.();
+        }
       }
-    }
-  };
+    };
 
   useEffect(() => {
     getDirectory(fs, cwd, details, setEntries);

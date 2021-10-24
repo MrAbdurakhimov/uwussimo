@@ -28,11 +28,10 @@ export const focusClosestFocusableElement = (
   element: HTMLElement | null
 ): void => element?.closest<HTMLElement>(':not(li)[tabindex]')?.focus();
 
-export const focusClosestFocusableElementFromRef = (
-  elementRef: React.RefObject<HTMLElement>
-) => (): void => {
-  focusClosestFocusableElement(elementRef.current);
-};
+export const focusClosestFocusableElementFromRef =
+  (elementRef: React.RefObject<HTMLElement>) => (): void => {
+    focusClosestFocusableElement(elementRef.current);
+  };
 
 export const lockDocumentTitle = (): void => {
   if (
@@ -54,8 +53,12 @@ export const getTargetCenterPosition = (
         element?.getElementsByTagName?.('figure')?.[0] ||
         element
       : element;
-  const { x = 0, y = 0, height = 0, width = 0 } =
-    idealElement?.getBoundingClientRect() || {};
+  const {
+    x = 0,
+    y = 0,
+    height = 0,
+    width = 0
+  } = idealElement?.getBoundingClientRect() || {};
 
   return {
     x: Math.floor(x + width / 2),

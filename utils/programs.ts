@@ -5,7 +5,6 @@ import { isValidUrl } from '@/utils/url';
 import { loaderOptions as genematorLoaderOptions } from '@/components/Programs/Genemator';
 import { loaderOptions as codeLoaderOptions } from '@/components/Programs/Code';
 import { loaderOptions as telegramLoaderOptions } from '@/components/Programs/Telegram';
-import { loaderOptions as dosLoaderOptions } from '@/components/Programs/Dos';
 import { loaderOptions as explorerLoaderOptions } from '@/components/Programs/Explorer';
 import { loaderOptions as webampLoaderOptions } from '@/components/Programs/WebODF';
 import { loaderOptions as winampLoaderOptions } from '@/components/Programs/Winamp';
@@ -14,7 +13,6 @@ import { ROOT_DIRECTORY } from '@/utils/constants';
 const Genemator = dynamic(import('@/components/Programs/Genemator'));
 const Code = dynamic(import('@/components/Programs/Code'));
 const Telegram = dynamic(import('@/components/Programs/Telegram'));
-const Dos = dynamic(import('@/components/Programs/Dos'));
 const Explorer = dynamic(import('@/components/Programs/Explorer'));
 const WebODF = dynamic(import('@/components/Programs/WebODF'));
 const Winamp = dynamic(import('@/components/Programs/Winamp'));
@@ -31,10 +29,6 @@ const appLoaders: AppLoaders = {
   telegram: {
     loader: Telegram,
     loaderOptions: telegramLoaderOptions
-  },
-  dos: {
-    loader: Dos,
-    loaderOptions: dosLoaderOptions
   },
   explorer: {
     loader: Explorer,

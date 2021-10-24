@@ -36,15 +36,8 @@ const useWindow = ({
     saveState,
     session: { foregroundId, stackOrder }
   } = useContext(SessionContext);
-  const {
-    processes,
-    close,
-    maximize,
-    minimize,
-    position,
-    restore,
-    size
-  } = useContext(ProcessContext);
+  const { processes, close, maximize, minimize, position, restore, size } =
+    useContext(ProcessContext);
   const [maximizeWindow, setMaximizeWindow] = useState(false);
   const { height, width } = getMaxDimensions(
     initialWidth,

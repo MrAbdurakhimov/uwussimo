@@ -5,9 +5,8 @@ import { foreground, getState, saveState } from '@/utils/session';
 import { initialSessionState } from '@/utils/initial';
 import { sessionReducer } from '@/utils/sessionmanager';
 
-export const SessionContext = createContext<SessionContextType>(
-  initialSessionState
-);
+export const SessionContext =
+  createContext<SessionContextType>(initialSessionState);
 
 const SessionProvider: React.FC = ({ children }) => {
   const [session, updateSession] = useReducer(

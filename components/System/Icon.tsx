@@ -1,5 +1,7 @@
+import Img from 'react-optimized-image';
+import { basename } from 'path';
+import { memo } from 'react';
 import DoomImg from '@/public/icons/games/doom.png';
-import DosImg from '@/public/icons/programs/dos.png';
 import ExplorerImg from '@/public/icons/programs/explorer.png';
 import JazzImg from '@/public/icons/games/jazz.png';
 import JsFileImg from '@/public/icons/files/js.svg';
@@ -7,10 +9,6 @@ import KeenImg from '@/public/icons/games/keen.png';
 import UnknownFileImg from '@/public/icons/files/unknown.svg';
 import WebODFImg from '@/public/icons/programs/webodf.png';
 import WinampImg from '@/public/icons/programs/winamp.png';
-
-import Img from 'react-optimized-image';
-import { basename } from 'path';
-import { memo } from 'react';
 
 type IconProps = { height: number; src: string; width: number };
 
@@ -22,9 +20,6 @@ const Icon: React.FC<IconProps> = ({ src, width, height }) => {
       return <Img url {...size} src={JsFileImg} alt="JavaScript" />;
     case '/icons/files/unknown.svg':
       return <Img url {...size} src={UnknownFileImg} alt="Unknown" />;
-    case '/icons/programs/dos.png':
-      return <Img url {...size} src={DosImg} alt="DOS" />;
-
     case '/icons/games/keen.png':
       return <Img {...size} src={KeenImg} alt="Commander Keen" type="icon" />;
     case '/icons/games/doom.png':

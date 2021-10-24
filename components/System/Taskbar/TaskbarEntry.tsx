@@ -21,9 +21,10 @@ const TaskbarEntry: React.FC<TaskbarEntryProps> = ({
     session: { foregroundId }
   } = useContext(SessionContext);
   const { minimize, restore, taskbarElement } = useContext(ProcessContext);
-  const refCallback = useCallback((element) => taskbarElement(id, element), [
-    id
-  ]);
+  const refCallback = useCallback(
+    (element) => taskbarElement(id, element),
+    [id]
+  );
   const onBlur = () => foreground('');
   const onClick = useCallback(
     () =>
