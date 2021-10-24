@@ -13,7 +13,6 @@ import { loaderOptions as webampLoaderOptions } from '@/components/Programs/WebO
 import { loaderOptions as winampLoaderOptions } from '@/components/Programs/Winamp';
 import { ROOT_DIRECTORY } from '@/utils/constants';
 
-const Old = dynamic(import('@/components/Programs/Old'));
 const Genemator = dynamic(import('@/components/Programs/Genemator'));
 const Code = dynamic(import('@/components/Programs/Code'));
 const Telegram = dynamic(import('@/components/Programs/Telegram'));
@@ -23,10 +22,6 @@ const WebODF = dynamic(import('@/components/Programs/WebODF'));
 const Winamp = dynamic(import('@/components/Programs/Winamp'));
 
 const appLoaders: AppLoaders = {
-  old: {
-    loader: Old,
-    loaderOptions: oldLoaderOptions
-  },
   genemator: {
     loader: Genemator,
     loaderOptions: genematorLoaderOptions
