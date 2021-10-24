@@ -2,7 +2,7 @@
 import type { AppComponent } from '@/types/utils/programs';
 import React, { useState } from 'react';
 
-const CODE_HOME_PAGE = 'https://code.genemator.uz';
+const CODE_HOME_PAGE = 'https://vscode.dev/';
 
 const Code: React.FC<AppComponent> = () => {
   let codeWindow: Window | null;
