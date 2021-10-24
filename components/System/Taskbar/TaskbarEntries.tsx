@@ -1,4 +1,3 @@
-
 import dynamic from 'next/dynamic';
 import { AnimatePresence } from 'framer-motion';
 import { useContext } from 'react';
