@@ -2,18 +2,21 @@
 
 @font-face {
   font-family: 'SegoeUI';
+
   font-display: block;
   src: url('/fonts/segoeui.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'SegoeMDL2Assets';
+
   font-display: block;
   src: url('/fonts/segmdl2.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'SF-Regular';
+
   font-display: block;
   src: url('/fonts/SF-Regular.woff2') format('woff2');
 }
@@ -22,7 +25,9 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
   user-select: none;
+
   outline: unset;
   &:focus {
     outline: unset;
@@ -31,11 +36,14 @@
 
 html {
   overflow: hidden;
+
   touch-action: manipulation;
 
   > body {
     font-family: 'Segoe UI', 'SegoeUI', 'Helvetica', sans-serif;
+
     background-color: black;
+
     overscroll-behavior: contain;
   }
 }

@@ -6,14 +6,18 @@ $startMenuTotalWidth: map-get($startmenu, width) +
 
 .taskbarEntries {
   @include bottomLeft;
+
   left: $startMenuTotalWidth - map-get($startmenu, padding);
+
   display: flex;
   flex: 0 1 map-get($taskbar, entry-width);
+
   width: calc(100% - #{map-get($clock, width)} - #{$startMenuTotalWidth});
   height: map-get($taskbar, height);
 
   li {
     display: grid;
+
     width: map-get($taskbar, entry-width);
     padding-left: 1px;
 

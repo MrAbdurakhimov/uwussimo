@@ -6,6 +6,7 @@
     "Winamp.url": null
   },
   "docs": { "welcome.odt": null },
+  "images": { "background.png": null, "nurture.png": null },
   "musics": {
     "comforting.mp3": null,
     "dancing with a stranger.mp3": null,
@@ -14,5 +15,5 @@
     "slow dance in the dark.mp3": null,
     "yeah right.mp3": null
   },
-  "start": { "WebODF.url": null }
+  "start": { "Imager.url": null, "WebODF.url": null }
 }

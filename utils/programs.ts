@@ -5,6 +5,7 @@ import { isValidUrl } from '@/utils/url';
 import { loaderOptions as codeLoaderOptions } from '@/components/Programs/Code';
 import { loaderOptions as telegramLoaderOptions } from '@/components/Programs/Telegram';
 import { loaderOptions as explorerLoaderOptions } from '@/components/Programs/Explorer';
+import { loaderOptions as imagerLoaderOptions } from '@/components/Programs/Imager';
 import { loaderOptions as webampLoaderOptions } from '@/components/Programs/WebODF';
 import { loaderOptions as winampLoaderOptions } from '@/components/Programs/Winamp';
 import { ROOT_DIRECTORY } from '@/utils/constants';
@@ -13,6 +14,7 @@ const Code = dynamic(import('@/components/Programs/Code'));
 const Telegram = dynamic(import('@/components/Programs/Telegram'));
 const Explorer = dynamic(import('@/components/Programs/Explorer'));
 const WebODF = dynamic(import('@/components/Programs/WebODF'));
+const Imager = dynamic(import('@/components/Programs/Imager'));
 const Winamp = dynamic(import('@/components/Programs/Winamp'));
 
 const appLoaders: AppLoaders = {
@@ -28,6 +30,10 @@ const appLoaders: AppLoaders = {
     loader: Explorer,
     loaderOptions: explorerLoaderOptions
   },
+  imager: {
+    loader: Imager,
+    loaderOptions: imagerLoaderOptions
+  },
   webodf: {
     loader: WebODF,
     loaderOptions: webampLoaderOptions
@@ -40,14 +46,16 @@ const appLoaders: AppLoaders = {
 
 export const getAppNameByExtension = (ext: string): string => {
   switch (ext) {
-    case '.zip':
-      return 'DOS';
     case '.odt':
       return 'WebODF';
     case '.mp3':
     case '.m3u':
     case '.wsz':
       return 'Winamp';
+    case '.png':
+    case '.jpg':
+    case '.jpeg':
+      return 'Imager';
     default:
       return '';
   }

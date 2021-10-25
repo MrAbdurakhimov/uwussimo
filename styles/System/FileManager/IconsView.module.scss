@@ -14,6 +14,7 @@
 
 .directoryIcons {
   @include positionTopLeft;
+
   width: 100%;
   height: calc(100% - #{map-get($taskbar, height)});
   padding: map-get($icons, padding) 0;
@@ -22,17 +23,23 @@
     display: flex;
     align-content: flex-end;
     flex-flow: column wrap;
+
     height: 100%;
     li {
       font-size: map-get($icon, font-size);
+
       z-index: map-get($zIndex, icons);
+
       display: flex;
+
       width: map-get($icon, width);
       min-height: map-get($icon, min-height);
       max-height: map-get($icon, max-height);
       margin: 0 0 (map-get($icons, padding) * 3) 0;
+
       color: map-get($icon, text-color);
       text-shadow: map-get($icon, text-shadow);
+
       place-content: space-evenly;
       place-items: center;
 
@@ -75,6 +82,7 @@
 
       figure {
         margin: 5px 0;
+
         text-align: center;
         white-space: nowrap;
         text-overflow: ellipsis;
@@ -87,10 +95,13 @@
         figcaption {
           display: -webkit-box;
           -webkit-box-orient: vertical;
+
           width: 75px;
+
           white-space: pre-line;
           letter-spacing: 0.1px;
           text-overflow: ellipsis;
+
           -webkit-line-clamp: 2;
         }
       }

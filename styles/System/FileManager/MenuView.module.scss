@@ -5,6 +5,7 @@
   position: absolute;
   bottom: 0;
   left: 5px;
+
   width: 270px;
   height: 300px;
   padding-top: 7px;
@@ -12,9 +13,11 @@
   li {
     padding: 2px;
     padding-left: 4px;
+
     color: rgba($offWhite, 0.8);
     figure {
       font-size: 12px;
+
       display: flex;
       align-items: center;
 
@@ -51,6 +54,7 @@
 .menuIcon {
   width: 32px;
   height: 32px;
+
   border-radius: 5px;
   background-color: darken($highlightColor, 25%);
   img {

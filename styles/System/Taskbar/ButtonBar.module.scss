@@ -6,9 +6,11 @@
   z-index: map-get($zIndex, taskbar);
   top: map-get($taskbar, height);
   left: 0;
+
   width: 48px;
   height: 300px;
   padding-top: 4px;
+
   transition: width 0.1s ease-out 0s;
   > :last-child {
     position: absolute;
@@ -25,6 +27,7 @@
 
     span {
       margin-left: -4px;
+
       color: darken($highlightColor, 15%);
     }
   }
@@ -33,21 +36,27 @@
     display: flex;
     overflow: hidden;
     align-items: center;
+
     width: 48px;
     height: 48px;
+
     white-space: nowrap;
+
     color: rgba(white, 80%);
     [data-icon]:before {
       /* stylelint-disable font-family-no-missing-generic-family-keyword */
       font-family: 'SegoeMDL2Assets';
+
       position: relative;
       top: 2px;
       left: 16px;
+
       content: attr(data-icon);
     }
 
     figcaption {
       font-size: 14px;
+
       position: relative;
       left: 48px;
 
@@ -93,8 +102,11 @@
 
 .buttons:hover {
   z-index: 99999;
+
   width: 200px;
+
   background-color: rgba(25, 25, 25, 0.5);
+
   backdrop-filter: blur(20px);
 }
 

@@ -4,10 +4,13 @@
 
 .taskbarEntry {
   @include textOverflowEllipsis;
+
   min-width: 0;
   height: map-get($taskbar, height);
   margin: 0 4px;
+
   text-align: left;
+
   border-width: 0 0 $thickLine 0;
   border-bottom-style: solid;
   border-bottom-color: $highlightColor;
@@ -16,6 +19,7 @@
   &:hover {
     margin: 0;
     padding: 0 4px;
+
     background-color: hsla(
       0,
       0%,
@@ -27,20 +31,26 @@
   figure {
     font-family: 'Segoe UI', 'SegoeUI', 'Helvetica', sans-serif;
     font-size: map-get($taskbarEntry, font-size);
+
     display: flex;
     align-items: center;
+
     height: map-get($taskbar, height) - $thickLine;
+
     color: map-get($taskbarEntry, text-color);
     img {
       display: flex;
+
       width: map-get($taskbarEntry, icon-width);
       margin: 0 map-get($taskbarEntry, icon-margin);
     }
 
     figcaption {
       overflow: hidden;
+
       width: map-get($taskbarEntry, text-width);
       padding-right: 5px;
+
       letter-spacing: 0;
       text-overflow: ellipsis;
     }
@@ -50,6 +60,7 @@
 .foreground {
   margin: 0;
   padding: 0 4px;
+
   background-color: hsla(
     0,
     0%,

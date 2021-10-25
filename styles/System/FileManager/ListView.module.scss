@@ -5,9 +5,13 @@ $textColor: rgb(225, 225, 225);
 .directory {
   display: inline-table;
   overflow: scroll;
+
   width: 100%;
+
   border-spacing: 0;
+
   word-wrap: break-word;
+
   color: rgba(255, 255, 255, 0.5);
   border: none;
   border-top: 1px solid rgb(0, 0, 0);
@@ -18,6 +22,7 @@ $textColor: rgb(225, 225, 225);
   td,
   th {
     line-height: 19px;
+
     height: 19px;
     min-height: 19px;
     max-height: 19px;
@@ -28,18 +33,25 @@ $textColor: rgb(225, 225, 225);
     tr {
       th {
         font-size: 10.5px;
+
         padding: 0 10px;
+
         text-align: left;
+
         border-right: 1px solid rgb(76, 76, 81);
         border-bottom: 3px solid;
 
         &:after {
           position: absolute;
           left: 0;
+
           display: block;
+
           width: 100%;
           height: 2px;
+
           content: '';
+
           border-top: 1px solid rgb(81, 81, 86);
           background-color: rgb(30, 30, 30);
         }
