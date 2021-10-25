@@ -1,3 +1,5 @@
+import { Rnd } from 'react-rnd';
+import { useContext, useEffect, useRef } from 'react';
 import styles from '@/styles/System/WindowManager/Window.module.scss';
 
 import type { AppComponent } from '@/types/utils/programs';
@@ -5,9 +7,7 @@ import type { AppComponent } from '@/types/utils/programs';
 import TitleBar from '@/components/System/WindowManager/TitleBar';
 import { focusOnDrag, focusResizableElementRef } from '@/utils/elements';
 import { resizeHandleClasses } from '@/utils/window';
-import { Rnd } from 'react-rnd';
 import { SessionContext } from '@/contexts/SessionManager';
-import { useContext, useEffect, useRef } from 'react';
 
 const Window: React.FC<AppComponent> = ({
   children,

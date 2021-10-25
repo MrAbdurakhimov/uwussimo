@@ -1,3 +1,4 @@
+import { createContext, useReducer } from 'react';
 import type { ProcessContextType } from '@/types/contexts/ProcessManager';
 
 import {
@@ -13,7 +14,6 @@ import {
   taskbarElement,
   title
 } from '@/utils/processmanager';
-import { createContext, useReducer } from 'react';
 import { initialProcessState } from '@/utils/initial';
 
 export const ProcessContext =

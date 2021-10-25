@@ -1,6 +1,8 @@
+import type Webamp from 'webamp';
+import { Rnd } from 'react-rnd';
+import { useEffect, useRef, useState } from 'react';
 import styles from '@/styles/Programs/Winamp.module.scss';
 
-import type Webamp from 'webamp';
 import type { AppComponent } from '@/types/utils/programs';
 import type { WebampStore } from '@/types/components/Programs/winamp';
 
@@ -16,8 +18,6 @@ import {
   webampOptions
 } from '@/utils/winamp';
 import { onTouchEventsOnly } from '@/utils/events';
-import { Rnd } from 'react-rnd';
-import { useEffect, useRef, useState } from 'react';
 
 const defaultDimensions = {
   height: 232,

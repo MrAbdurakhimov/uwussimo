@@ -1,6 +1,6 @@
+import { createContext, useReducer } from 'react';
 import type { SessionContextType } from '@/types/contexts/SessionManager';
 
-import { createContext, useReducer } from 'react';
 import { foreground, getState, saveState } from '@/utils/session';
 import { initialSessionState } from '@/utils/initial';
 import { sessionReducer } from '@/utils/sessionmanager';

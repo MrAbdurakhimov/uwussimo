@@ -1,6 +1,5 @@
-import { FileStat, ListingStat } from '@/types/utils/filesystem';
-
 import publicStats from 'public_stats.json';
+import { FileStat, ListingStat } from '@/types/utils/filesystem';
 
 const bytesInKB = 1024;
 const fileSizes = ['bytes', 'KB', 'MB', 'GB', 'TB'];

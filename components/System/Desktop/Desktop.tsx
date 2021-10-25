@@ -1,7 +1,7 @@
+import { useRef } from 'react';
 import styles from '@/styles/System/Desktop/Desktop.module.scss';
 
 import useWallpaper from '@/hooks/useWallpaper';
-import { useRef } from 'react';
 
 const Desktop: React.FC = ({ children }) => {
   const desktopRef = useRef<HTMLElement>(null);

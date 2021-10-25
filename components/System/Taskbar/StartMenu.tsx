@@ -1,13 +1,12 @@
-import styles from '@/styles/System/Taskbar/StartMenu.module.scss';
-
-import ButtonBar from '@/components/System/Taskbar/ButtonBar';
-import FileManager from '@/components/System/FileManager/FileManager';
-import MenuView from '@/components/System/FileManager/MenuView';
 import { createPortal } from 'react-dom';
 import { faApple } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { getNextContainerElement } from '@/utils/elements';
 import { useEffect, useRef, useState } from 'react';
+import styles from '@/styles/System/Taskbar/StartMenu.module.scss';
+
+import FileManager from '@/components/System/FileManager/FileManager';
+import MenuView from '@/components/System/FileManager/MenuView';
+import { getNextContainerElement } from '@/utils/elements';
 
 const StartMenu: React.FC<{
   taskbarRef: React.RefObject<HTMLElement>;

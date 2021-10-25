@@ -1,14 +1,14 @@
+import { motion } from 'framer-motion';
+import { useCallback, useContext } from 'react';
 import styles from '@/styles/System/Taskbar/TaskbarEntry.module.scss';
 
 import type { TaskbarEntryProps } from '@/types/components/System/Taskbar/TaskbarEntry';
 
 import Icon from '@/components/System/Icon';
 import { cycleWindowState } from '@/utils/taskbar';
-import { motion } from 'framer-motion';
 import { ProcessContext } from '@/contexts/ProcessManager';
 import { SessionContext } from '@/contexts/SessionManager';
 import { taskbarEntriesMotionSettings } from '@/utils/motions';
-import { useCallback, useContext } from 'react';
 
 const TaskbarEntry: React.FC<TaskbarEntryProps> = ({
   icon,

@@ -1,5 +1,5 @@
-import type { FileDropEvents } from '@/types/utils/events';
 import type { RndDragCallback } from 'react-rnd';
+import type { FileDropEvents } from '@/types/utils/events';
 
 import { CLICK_DELAY_IN_MILLISECONDS } from '@/utils/constants';
 

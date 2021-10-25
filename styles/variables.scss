@@ -1,5 +1,3 @@
-@use 'sass:math';
-
 $highlightColor: #242424;
 $highlightColor2: rgb(200, 200, 200);
 
@@ -32,7 +30,7 @@ $iconsZindexLevel: 1;
 $windowsZindexLevel: 2;
 $taskbarZindexLevel: 3;
 $foregroundZindex: ($baseZindex + $windowsZindexLevel * $zindexLevelSize) +
-  math.div($zindexLevelSize, 2);
+  $zindexLevelSize / 2;
 
 $taskbarEntryWidth: 160px;
 $titlebarHeight: 22px;

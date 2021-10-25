@@ -1,10 +1,10 @@
+import { useRef, useState } from 'react';
 import styles from '@/styles/System/FileManager/ListView.module.scss';
 
 import type { DirectoryView } from '@/types/components/System/FileManager/FileManager';
 
 import ListEntry from '@/components/System/FileManager/ListEntry';
 import { ROOT_DIRECTORY } from '@/utils/constants';
-import { useRef, useState } from 'react';
 
 const DirectoryList: React.FC<DirectoryView> = ({
   cwd,

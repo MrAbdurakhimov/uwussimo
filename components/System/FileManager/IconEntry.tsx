@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+import { useRef, useState } from 'react';
 import styles from '@/styles/System/FileManager/IconsView.module.scss';
 
 import type { IconEntryProps } from '@/types/components/System/FileManager/IconEntry';
@@ -8,8 +10,6 @@ import {
   desktopIconDragSettings,
   desktopIconMotionSettings
 } from '@/utils/motions';
-import { motion } from 'framer-motion';
-import { useRef, useState } from 'react';
 
 const DirectyIconEntry: React.FC<IconEntryProps> = ({
   icon,

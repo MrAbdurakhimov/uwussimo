@@ -1,8 +1,8 @@
-import type { DirectoryEntry } from '@/types/components/System/FileManager/FileManager';
 import type { FSModule } from 'browserfs/dist/node/core/FS';
+import { extname } from 'path';
+import type { DirectoryEntry } from '@/types/components/System/FileManager/FileManager';
 import type { Shortcut } from '@/types/utils/shortcut';
 
-import { extname } from 'path';
 import { FileStat } from '@/types/utils/filesystem';
 import {
   getFileIcon,

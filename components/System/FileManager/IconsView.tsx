@@ -1,10 +1,10 @@
+import { AnimatePresence } from 'framer-motion';
+import { useRef } from 'react';
 import styles from '@/styles/System/FileManager/IconsView.module.scss';
 
 import type { DirectoryView } from '@/types/components/System/FileManager/FileManager';
 
 import IconEntry from '@/components/System/FileManager/IconEntry';
-import { AnimatePresence } from 'framer-motion';
-import { useRef } from 'react';
 
 const DirectoryIcons: React.FC<DirectoryView> = ({
   entries,

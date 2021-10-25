@@ -1,6 +1,7 @@
-import type { AppFile } from '@/types/utils/programs';
 import type { Dispatch } from 'react';
 import type { RndDragCallback, RndResizeCallback } from 'react-rnd';
+import { basename, extname } from 'path';
+import type { AppFile } from '@/types/utils/programs';
 import type {
   ProcessAction,
   Processes,
@@ -8,7 +9,6 @@ import type {
 } from '@/types/utils/processmanager';
 
 import { appLoader } from '@/utils/programs';
-import { basename, extname } from 'path';
 import { getFileIcon } from '@/utils/file';
 import { getProcessId, Process } from '@/utils/process';
 

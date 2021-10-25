@@ -1,9 +1,9 @@
+import dynamic from 'next/dynamic';
+import { motion } from 'framer-motion';
 import styles from '@/styles/System/WindowManager/WindowManager.module.scss';
 
 import type { Process } from '@/utils/process';
 
-import dynamic from 'next/dynamic';
-import { motion } from 'framer-motion';
 import useWindow from '@/hooks/useWindow';
 
 const Window = dynamic(import('@/components/System/WindowManager/Window'));

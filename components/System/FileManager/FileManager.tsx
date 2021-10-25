@@ -1,16 +1,16 @@
+import { extname, resolve } from 'path';
+import { useContext, useEffect, useState } from 'react';
 import type {
   DirectoryEntry,
   DirectoryEntryDoubleClick,
   DirectoryType
 } from '@/types/components/System/FileManager/FileManager';
 
-import { extname, resolve } from 'path';
 import { FileContext } from '@/contexts/FileSystem';
 import { getAppNameByExtension } from '@/utils/programs';
 import { getDirectory, getDirectoryEntry } from '@/utils/filemanager';
 import { ProcessContext } from '@/contexts/ProcessManager';
 import { SessionContext } from '@/contexts/SessionManager';
-import { useContext, useEffect, useState } from 'react';
 import { useFileDrop } from '@/utils/events';
 
 const FileManager: React.FC<DirectoryType> = ({
