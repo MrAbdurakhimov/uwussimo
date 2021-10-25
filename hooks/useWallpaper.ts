@@ -19,7 +19,8 @@ const vantaJsSettings = {
   touchControls: true,
   highlightColor: 0xffffff,
   midtoneColor: 0xffffff,
-  lowlightColor: 0x4e2ceb
+  lowlightColor: 0x4e2ceb,
+  speed: 2
 };
 
 const initRainbowEffect = (wallpaperEffect: WallpaperEffect): (() => void) => {
