@@ -1,3 +1,4 @@
+@use "sass:math";
 @import '@/styles/mixins';
 
 $buttonIconOpacity: 0.975;
@@ -167,7 +168,7 @@ $buttonIconOpacity: 0.975;
     @media (pointer: coarse) {
       &:after {
         position: absolute;
-        top: -(map-get($window, title-bar-pointer-padding) / 2);
+        top: -(math.div(map-get($window, title-bar-pointer-padding), 2));
         right: 0;
 
         width: calc(100% - 68px);
