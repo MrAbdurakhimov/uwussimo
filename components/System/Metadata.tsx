@@ -9,13 +9,12 @@ const Metadata: React.FC = () => {
 
   return (
     <Head>
-      <title>GenOS - Team BSBA's Desktop Browser OS</title>
+      <title>UwU - Robinson's Desktop</title>
       <meta
         name="description"
-        content="This is BSBA's Browser OS which was created to work remotely without server bind."
+        content="Website of UwUsimmo Robinson where he tries to show his works"
       />
-      <meta property="og:image" content="https://genemator.uz/preview.png" />
-      <meta property="og:site_name" content="BSBA" />
+      <meta property="og:site_name" content="UwUssimo's" />
       <link
         rel="preload"
         href="fonts/segoeui.woff2"
