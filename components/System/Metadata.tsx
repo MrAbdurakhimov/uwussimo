@@ -9,10 +9,10 @@ const Metadata: React.FC = () => {
 
   return (
     <Head>
-      <title>UwU - Robinson's Desktop</title>
+      <title>UwU - Robinson&lsquo;s Desktop</title>
       <meta
         name="description"
-        content="Website of UwUsimmo Robinson where he tries to show his works"
+        content="Website of UwUssimmo Robinson where he tries to show his works"
       />
       <meta property="og:site_name" content="UwUssimo's" />
       <link
