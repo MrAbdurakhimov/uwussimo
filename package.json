@@ -5,6 +5,7 @@
   "author": "UwUssimo Robinson",
   "license": "MIT",
   "scripts": {
+    "deploy": "yarn genfs && yarn build",
     "build": "next build",
     "check": "npm run eslint -- --fix && npm run csscomb && npm run prettier && npm run stylelint && npm run genfs && npm run build",
     "csscomb": "csscomb styles",
