@@ -1,5 +1,5 @@
-<p>
-    <a href="http://uwussi.moe"><img src="./assets/Welcome.png" alt="Welcome Immage"></a>
+<p align="center">
+    <a href="https://uwussi.moe"><img src="./assets/Welcome.png" alt="Welcome Immage"></a>
 </p>
 
 <p align="center">
