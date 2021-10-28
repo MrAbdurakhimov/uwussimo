@@ -7,3 +7,9 @@
   &nbsp;&nbsp;&nbsp;
   <a href="https://github.com/genemators?tab=repositories&type=source"><img src="./assets/Trophy 2.png" width=48% alt="10 years of experience"></a>
 </p>
+
+<p align="center">
+  <a href="https://open.spotify.com/user/vfhnxl30qo68a871khs2szxmi?si=69bbcb909d4a44ed"><img src="./assets/Trophy 3.png" width=48% alt="Crazy nerd in love with music"></a>
+  &nbsp;&nbsp;&nbsp;
+  <a href="https://yummyanime.club/users/id863269"><img src="./assets/Trophy 4.png" width=48% alt="Weeb who loves anime to death"></a>
+</p>
