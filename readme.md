@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-    <h1>Trophies</h1>
+    <h1 align="center">Trophies</h1>
 </p>
 
 <p>
