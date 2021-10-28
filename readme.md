@@ -1,1 +1,1 @@
-![Image here](./public/images/background.png)
+![Welcome Board](./assets/welcome.png)
